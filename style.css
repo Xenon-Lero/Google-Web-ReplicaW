@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section header ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+section header ul li:hover {
+    text-decoration: underline;
+}
+
+section header ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+}
+
+section header ul li button {
+    background-color: #4584ef;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* main */
+
+section .engine {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .engine .searchbar {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 30px; /* Adjusted to match the input box's radius */
+    background-color: #fff; /* Add background to make the shadow visible */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Smooth shadow */
+    display: flex; /* Ensure the layout stays aligned */
+    align-items: center;
+    padding: 0 15px; /* Adds internal spacing for icons */
+    border: 1px solid #e3e3e3; /* Matches the input's border */
+}
+
+section .engine .searchbar:hover {
+    border: 1px solid #fff;
+}
+
+section .engine .searchbar .search {
+    flex-grow: 1;
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px; /* Leave space for the search icon */
+    padding-right: 52px; /* Leave space for the mic icon */
+    border: none; /* Removes inner border */
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+section .engine .searchbar .icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 7px;
+    align-items: center;
+    pointer-events: none;
+    gap: 530px;
+}
+
+section .engine .btn {
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
+section .engine .btn button {
+    margin: 0 5px;
+    padding: 8px 20px;
+    color: #3c4043;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f8f9fa;
+    
+}
+
+section .engine .btn button:hover {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section .engine .lang {
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
+section .engine .lang a {
+    text-decoration: none;
+}
+
+section .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+section .footer .row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb( 0, 0, 0, 0.05);
+}
+
+section .footer .row ul {
+    display: flex;
+}
+
+section .footer .row ul li {
+    list-style: none;
+}
+
+section .footer .row ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1f1f1f;
+    margin-right: 25px;
+}
+
+section .footer .row ul li:hover {
+    text-decoration: underline;
+}
+
+/* Desktop View */
+
+@media (max-width: 1024px) {
+}
+
+
+
+/* Mobile View */
+
+@media (max-width: 767px) {
+    section .engine .searchbar {
+        width: 75%;
+        top: -10px;
+        
+    }
+    section .engine .searchbar .icons {
+        gap: 63vw;
+    }
+    section header ul li .txt-btn{
+        display: none;
+    }
+    section .engine .gogimg {
+        scale: 0.7;
+        margin-top: -350px;
+    }
+    section .engine .btn {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    section .engine .lang  {
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+    section .footer .row ul {
+        display: block;
+        margin-left: -12px;
+        margin-right: 1px;
+    }
+}

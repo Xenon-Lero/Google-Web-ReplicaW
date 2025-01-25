@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google</title>
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a class="txt-btn" href="https://mail.google.com/mail/u/0/?ogbl">Gmail</a></li>
+                <li><a class="txt-btn" href="https://www.google.com/imghp">Images</a></li>
+                <li><a href="#" onclick="alert('Feature Currently Disabled.')"><img src="bars.png"></a></li>
+                <li><button onclick="window.location.href = 'https://accounts.google.com/ServiceLogin';">Sign in</button></li>
+            </ul>
+        </header>
+        <!-- Main -->
+        <div class="engine">
+            <div class="gogimg">
+            <img src="google.png" alt="Google">
+            </div>
+            <div class="searchbar">
+                <input type="text" class="search">
+                <div class="icons">
+                    <div><img src="search.png"></div>
+                    <div><img src="mic.png"></div>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="go" onclick="searchGoogle()">Google Search</button>
+                <a href="https://doodles.google/"><button>I'm Feeling Lucky</button></a>
+            </div>
+
+            <!-- Search Button Script -->
+            <script>
+                // Function to handle the search
+                function searchGoogle() {
+                    const searchInput = document.querySelector('.search').value;
+                    if (searchInput.trim() === '') {
+                        
+                    } else {
+                        window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent(searchInput);
+                    }
+                }
+            
+                // Add event listener for the Enter key
+                document.querySelector('.search').addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter') {
+                        searchGoogle();
+                    }
+                });
+            </script>
+            <!-- Script End -->
+
+            <div class="lang">
+                Google Offered in <a href="#" onclick="alert('Feature Currently Disabled.')">বাংলা</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li><a href="https://about.google/?utm_source=google-BD&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                    <li><a href="https://ads.google.com/intl/en/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy?hl=en-BD&fg=1">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=en-BD&fg=1">Terms</a></li>
+                    <li><a href="#" onclick="alert('Feature Currently Disabled.')">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
