@@ -138,6 +138,67 @@ section .engine .lang a {
     text-decoration: none;
 }
 
+section .engine .lang p {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    font-size: 10px;
+    color: #3c4043cc;
+}
+
+/* water mark colors */
+section .engine .lang p a {
+    /*color: #242628;*/
+    font-weight: bold;
+}
+
+section .engine .lang p a .blue:hover {
+    color: #010332;
+}
+
+section .engine .lang p a .red:hover {
+    color: #100328;
+}
+
+section .engine .lang p a .yellow:hover {
+    color: #29011C;
+}
+
+section .engine .lang p a .green:hover {
+    color: #43000D;
+}
+
+section .engine .lang p a .lime:hover {
+    color: #530005;
+}
+
+/**/
+
+section .engine .lang p a .blue {
+    color: #4285F4;
+}
+
+section .engine .lang p a .red {
+    color: #EA4335;
+}
+
+section .engine .lang p a .yellow {
+    color: #FBBC05;
+}
+
+section .engine .lang p a .blue {
+    color: #4285F4;
+}
+
+section .engine .lang p a .green {
+    color: #34A853;
+}
+
+section .engine .lang p a .lime {
+    color: rgb(23, 210, 132);
+}
+/* Colors End */
+
 section .footer {
     position: absolute;
     bottom: 0;
